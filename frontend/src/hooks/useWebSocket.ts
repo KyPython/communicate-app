@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { io, Socket } from 'socket.io-client';
 import type { Message } from '../types';
 
-const SOCKET_URL = 'http://localhost:3001';
+const SOCKET_URL = import.meta.env.VITE_SOCKET_URL || import.meta.env.VITE_API_URL || 'http://localhost:3001';
 
 export function useWebSocket(
   channelId: string | null,
