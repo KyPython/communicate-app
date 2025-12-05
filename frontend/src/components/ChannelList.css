@@ -1,0 +1,135 @@
+.channel-list {
+  width: 250px;
+  background-color: #2f3136;
+  color: #dcddde;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border-right: 1px solid #202225;
+}
+
+.channel-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #202225;
+}
+
+.channel-list-header h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.channel-list-header button {
+  background: #5865f2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.channel-list-header button:hover {
+  background: #4752c4;
+}
+
+.create-channel-form {
+  padding: 16px;
+  border-bottom: 1px solid #202225;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.create-channel-form input {
+  padding: 8px;
+  border: 1px solid #202225;
+  border-radius: 4px;
+  background: #40444b;
+  color: #dcddde;
+  font-size: 14px;
+}
+
+.create-channel-form input:focus {
+  outline: none;
+  border-color: #5865f2;
+}
+
+.form-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.form-actions button {
+  flex: 1;
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.form-actions button[type="submit"] {
+  background: #5865f2;
+  color: white;
+}
+
+.form-actions button[type="submit"]:hover {
+  background: #4752c4;
+}
+
+.form-actions button[type="button"] {
+  background: #4f545c;
+  color: #dcddde;
+}
+
+.form-actions button[type="button"]:hover {
+  background: #5d6269;
+}
+
+.channels {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.channels li {
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.channels li:hover {
+  background-color: #3c3f44;
+}
+
+.channels li.active {
+  background-color: #393c43;
+  border-left: 3px solid #5865f2;
+}
+
+.channel-name {
+  font-weight: 500;
+  font-size: 14px;
+  color: #8e9297;
+}
+
+.channels li.active .channel-name {
+  color: #ffffff;
+}
+
+.channel-desc {
+  font-size: 12px;
+  color: #72767d;
+  margin-top: 2px;
+}
+
